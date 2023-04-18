@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <!--stylesheet link-->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- icon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!--script link-->
+    <script src="script.js"></script>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/9adc5e779e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!--creating a whole body with a dimension-->
+    <div class="fullbody">
+        
+        <!--nav bar creation-->
+        <nav>
+            <div class="logo">
+                <h3>Logo</h3>
+            </div>
+            
+            <ul>
+                <li><a href="">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="">About <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="">Contact<i class="fa-solid fa-message-middle"></i> </a></li>
+                <li><a href="">Services <i class="fa-solid fa-conveyor-belt-arm"></i></a></li>
+                <li onmouseover="show_dropdown1()" class="drop"><a href=""><i class="fa-solid fa-burger"></i></a></li>
+            </ul>
+        </nav>
+        <br><br><br><br><br>
+
+        <!--first drop down-->
+            <section id="dropdowncat1" class="dropdown1">
+                <ul>
+                    <li onclick="hide_dropdown2()"><a href="">Home <i class="fa-solid fa-house"></i></a></li>
+                    <li onclick="hide_dropdown2()"><a href="">About <i class="fa-solid fa-address-card"></i></a></li>
+                    <li onclick="hide_dropdown2()"><a href="">Contact<i class="fa-solid fa-message-text" style="color: #fff;"></i></a></li>
+                    <li onmouseover="show_dropdown2()"><a href="">Services <i class="fa-solid fa-conveyor-belt-arm" style="color: #fff"></i></a></li>
+                </ul>
+            </section>
+
+            <!--header-->
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+
+        <!--second drop down-->
+        <section id="dropdowncat2" class="dropdown2">
+            <ul>
+                <li ><a href="">Coding </i></a></li>
+                <li ><a href="">Graphics <i class="fa-sharp fa-solid fa-pencil-mechanical"></i></a></li>
+                <li ><a href="">Robotics <i class="fa-solid fa-robot"></i></a></li>
+            </ul>
+        </section>
+
+        <!--content-->
+        <div class="content">
+            <h2>Content/Body</h2>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <h2>Footer</h2>
+            </footer>
+        </div>
+
+    </div>
+
+
+   
+    
+</body>
+</html>
